@@ -1,0 +1,44 @@
+*{
+    color: white;
+}
+
+.btn{
+    height: 50;
+    width: 220;
+    border-radius: 20;
+    background-color: #006DCC;
+}
+
+.txt{
+    vertical-align: center;
+    text-align: center;
+    background-color: gray;
+    font-size: 18;
+}
+
+.txts{
+    vertical-align: center;
+    text-align: center;
+    font-size: 18;
+    font-weight: bold;
+    margin-left: -60;
+}
+
+.menu{
+    height: 30;
+    width: 30;
+}
+
+.add{
+    height: 30;
+    width: 30;
+}
+
+.page{
+    vertical-align: center;
+}
+
+.col{
+    background-color: white;
+    width: 10;
+}

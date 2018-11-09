@@ -1,0 +1,55 @@
+<ActionBar title="" icon="" class="action-bar">
+    <GridLayout rows="*" columns="*, *">
+        <Image horizontalAlignment="left" (tap)="mostrarMenu()" row="0" col="0" class="menu" src="~/images/menu.png"></Image>
+    </GridLayout>
+</ActionBar>
+<RadSideDrawer>
+    <StackLayout tkDrawerContent class="sideStackLayout">
+        <app-drawer></app-drawer>
+    </StackLayout>
+    <StackLayout tkMainContent class="page">
+        <GridLayout rows="*" columns="*,*" class="btn" (tap)="startRecord()">
+            <Image horizontalAlignment="left" class="add" row="0" col="0" src="~/images/add.png"></Image>
+            <Label horizontalAlignment="left" row="0" col="1" class="txts" text="Start Recording" textWrap="true"></Label>
+        </GridLayout>
+        <WrapLayout style="background-color:gray" height="160">
+            <GridLayout rows="*" columns="*,*,*,*,*,*,*,*,*,*" style="background-color:gray;margin:10" height="80">
+                <WrapLayout class="col" row="0" col="0">
+
+                </WrapLayout>
+                <WrapLayout class="col" row="0" col="1">
+
+                </WrapLayout>
+                <WrapLayout class="col" row="0" col="2">
+
+                </WrapLayout>
+                <WrapLayout class="col" row="0" col="3">
+
+                </WrapLayout>
+                <WrapLayout class="col" row="0" col="4">
+
+                </WrapLayout>
+                <WrapLayout class="col" row="0" col="5">
+
+                </WrapLayout>
+                <WrapLayout class="col" row="0" col="6">
+
+                </WrapLayout>
+                <WrapLayout class="col" row="0" col="7">
+
+                </WrapLayout>
+                <WrapLayout class="col" row="0" col="8">
+
+                </WrapLayout>
+                <WrapLayout class="col" row="0" col="9">
+
+                </WrapLayout>
+            </GridLayout>
+            
+        </WrapLayout>
+        <Label class="txt" text="Done" textWrap="true"></Label>
+        <Button text="stopRecord" (tap)="stopRecord()"></Button>
+        <Button text="Listening" (tap)="listen()"></Button>
+        
+    </StackLayout>
+</RadSideDrawer>

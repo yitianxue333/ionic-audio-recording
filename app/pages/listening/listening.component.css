@@ -1,0 +1,16 @@
+.data{
+    vertical-align: center;
+}
+
+Label{
+    vertical-align: center;
+}
+
+GridLayout{
+    padding: 5;
+}
+
+.img{
+    height: 30;
+    width: 30;
+}

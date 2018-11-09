@@ -1,0 +1,36 @@
+.page {
+    background-color: dimgray;
+}
+
+.search{
+    background-color: rgb(211, 207, 207);
+    height: 10%;
+    margin: 10;
+    border-radius: 2;
+    padding: 10;
+}
+
+.items{
+    background-color:white;
+    margin: 10;
+    border-radius: 10;
+}
+
+.item{
+    border-bottom-color: gray;
+    border-bottom-width: 0.5;
+    height: 60;
+}
+
+Label{
+    color: black;
+    font-size: 18;
+    text-align: center;
+    vertical-align: center;
+    width: 100%;
+}
+
+SearchBar{
+    vertical-align: center;
+    border-radius: 10;
+}

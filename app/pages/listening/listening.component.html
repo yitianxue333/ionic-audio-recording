@@ -1,0 +1,19 @@
+<StackLayout class="data">
+    <GridLayout rows="*" columns="*,*,*" height="10%">
+        <Image class="img" row="0" col="0" src="~/images/rewind.png"></Image>
+        <Image class="img" row="0" col="1" src="~/images/play.png"></Image>
+        <Image class="img" row="0" col="2" src="~/images/skip.png"></Image>
+    </GridLayout>
+    <GridLayout rows="*,*" columns="*,*,*" width="100%" height="20%" horizontalAlignment="center">
+        <Label  row="0" col="0" text="SPEED" textWrap="true"></Label>
+        <Label  row="1" col="0" text="VOLUME" textWrap="true"></Label>
+        <Slider width="200" row="0" col="1" value="20" (valueChange)="onSecondSliderChange($event)" minValue="15" maxValue="100"></Slider>
+        <Slider width="40%" row="1" col="1" value="20" (valueChange)="onSecondSliderChange($event)" minValue="15" maxValue="100"></Slider>
+        <Label  row="0" col="2" text="1x" textWrap="true"></Label>
+        <Label  row="1" col="2" text="1x" textWrap="true"></Label>
+    </GridLayout>
+    <GridLayout rows="*" columns="*,*" height="80" horizontalAlignment="left">              
+        <Switch row="0" col="0" class="m-15" checked="false" (checkedChange)="onFirstChecked($event)"></Switch>
+        <Label horizontalAligment="left" row="0" col="1" text="Repeat This" textWrap="true"></Label>  
+    </GridLayout>
+</StackLayout>

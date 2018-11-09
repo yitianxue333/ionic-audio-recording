@@ -1,0 +1,27 @@
+<ScrollView height="100%">
+    <StackLayout class="page">
+        <StackLayout class="search">
+            <SearchBar hint="Search" [text]="searchPhrase" (textChange)="onTextChanged($event)" (submit)="onSubmit($event)" color="black"
+                textFieldBackgroundColor="white" textFieldHintColor="black"></SearchBar>
+        </StackLayout>
+        <ScrollView height="90%">
+            <GridLayout rows="*,*,*,*,*" columns="*" class="items">
+                <GridLayout row="0" col="0" rows="*" columns="*" class="item">
+                    <Label text="Audio 1" textWrap="true"></Label>
+                </GridLayout>
+                <GridLayout row="1" col="0" rows="*" columns="*" class="item">
+                    <Label text="Audio 2" textWrap="true"></Label>
+                </GridLayout>
+                <GridLayout row="2" col="0" rows="*" columns="*" class="item">
+                    <Label text="Audio 3" textWrap="true"></Label>
+                </GridLayout>
+                <GridLayout row="3" col="0" rows="*" columns="*" class="item">
+                    <Label text="Audio 4" textWrap="true"></Label>
+                </GridLayout>
+                <GridLayout row="4" col="0" rows="*" columns="*" class="item">
+                    <Label text="Audio 5" textWrap="true"></Label>
+                </GridLayout>
+            </GridLayout>
+        </ScrollView>
+    </StackLayout>
+</ScrollView>
